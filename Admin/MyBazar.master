@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MyBazar.master.cs" Inherits="MyBazarUser_MyBazar" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" href="../CSS/mybazar.css" type="text/css" />
+    <link rel="Stylesheet" href="../CSS/styles.css" type="text/css" />
+    <link rel="Stylesheet" href="../CSS/new css.css" type="text/css" />
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../css/price-range.css" rel="stylesheet" />
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="divmaster">
+        <div class="divmasterleft">
+            MyBazar.com Banner Goes Here
+        </div>
+        <div class="divmasterright">
+            Minimum Order ValueRs 200|<asp:LinkButton ID="lnkareaserviced" runat="server" OnClick="lnkareaserviced_Click">Area Serviced</asp:LinkButton>
+            |<asp:LinkButton ID="lnkcustomerservice" runat="server" OnClick="lnkcustomerservice_Click">Customer Service</asp:LinkButton>
+            &nbsp;</div>
+    </div>
+    <div style="height: 35px">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='#'><span>Fruits & Vegetables </span></a></li>
+                <li class='has-sub'><a href='#'><span>Grocery & Staples</span></a>
+                    <ul>
+                        <li class='has-sub'><a href='#'><span>Dal & Pulses</span></a>
+                            <ul>
+                                <li><a href='#'><span>Toor Dal</span></a></li>
+                                <li><a href='#'><span>Urad Dal(Harada Dali)</span></a></li>
+                                <li><a href='#'><span>Soya Product</span></a></li>
+                                <li class='last'><a href='#'><span>Moong Dal(Muga Dali)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'><span>Flours & Sooji</span></a>
+                            <ul>
+                                <li><a href="ProductList.aspx?N=Besan&Maida"><span>Besan,Maida</span></a></li>
+                                <li class='last'><a href="ProductList.aspx?N=Ata"><span>Wheat Flour(Ata)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'><span>Edible Oil & Ghee</span></a>
+                            <ul>
+                                <li><a href="ProductList.aspx?N=Mustard Oil"><span>Mustard Oil</span></a></li>
+                                <li><a href="ProductList.aspx?N=Refined Oil"><span>Refined Oil</span></a></li>
+                                <li><a href='#'><span>Groundnut Oil</span></a></li>
+                                <li class='last'><a href='#'><span>Dalda Ghee</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'><span>Rice & Rice Products</span></a>
+                            <ul>
+                                <li><a href='#'><span>Regular Rice(Arua Chaula)</span></a></li>
+                                <li><a href='#'><span>Boiled Rice(Usuna Chaula)</span></a></li>
+                                <li><a href='#'><span>Basmati Rice</span></a></li>
+                                <li class='last'><a href='#'><span>Other Rice Product</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'><span>Dry Fruits & Nuts</span></a>
+                            <ul>
+                                <li><a href='#'><span>Almonds</span></a></li>
+                                <li class='last'><a href='#'><span>Cashews</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href='#'><span>Bakery & Diary</span></a>
+                    <ul>
+                        <li class='has-sub'><a href='#'><span>Bread & Brekary</span></a>
+                            <ul>
+                                <li><a href='#'><span>Breads</span></a></li>
+                                <li><a href='#'><span>Cakes</span></a></li>
+                                <li class='last'><a href='#'><span>Rusk & Khari</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'><span>Diary Product</span></a>
+                            <ul>
+                                <li><a href='#'><span>Milk & Dahi</span></a></li>
+                                <li><a href='#'><span>Lassi</span></a></li>
+                                <li class='last'><a href='#'><span>Butter & cheese</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href='#'><span>Branded Food</span></a>
+                    <ul>
+                        <li class='has-sub'><a href='#'><span>Snacks</span></a>
+                            <ul>
+                                <li><a href='#'><span>Namkeen</span></a></li>
+                                <li><a href='#'><span>Khakra</span></a></li>
+                                <li class='last'><a href='#'><span>PopCorn</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'><span>Biscuits </span></a></li>
+                    </ul>
+                </li>
+                <li><a href='#'><span>International Food</span></a>
+                    <ul>
+                        <li class='has-sub'><a href='#'><span>Pasta & Noodles</span></a></li>
+                        <li class='has-sub'><a href='#'><span>Energy Cereals</span></a></li>
+                    </ul>
+                </li>
+                <li class='last'><a href='#'><span>Beverages</span></a>
+                    <ul>
+                        <li class='has-sub'><a href='#'><span>Tea & Coofee</span></a></li>
+                        <li class='has-sub'><a href='#'><span>Soft Drink</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="divcontent">
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id='divfooter'>
+        <div class="left-column">
+            <br />
+            <br />
+            Feedback</div>
+        <div class="right-column">
+            <br />
+            <br />
+            Contact Us</div>
+        <div class="center-column">
+            <br />
+            <br />
+            About us</div>
+    </div>
+    </form>
+</body>
+</html>

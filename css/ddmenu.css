@@ -1,0 +1,364 @@
+#ddmenu .caret,
+#ddmenu li {
+    vertical-align: middle;
+    display: inline-block
+}
+
+#ddmenu .caret,
+#ddmenu .top-heading,
+#ddmenu li,
+#ddmenu ul {
+    display: inline-block
+}
+
+#ddmenu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    letter-spacing: normal;
+    font-size: 18px;
+    position: fixed
+}
+
+#ddmenu ul {
+    margin: 0 auto;
+    padding: 2px 0 0;
+    text-align: center;
+    width: 100%;
+    font-size: medium;
+    background: #00a63f;
+    list-style: none;
+    position: relative;
+    z-index: 999999990;
+    border-radius: 2px
+}
+
+#ddmenu li {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    zoom: 1;
+    position: relative;
+    color: #eee;
+    line-height: 30px;
+    transition: background-color .2s;
+    outline: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none
+}
+
+#ddmenu .full-width {
+    position: static
+}
+
+#ddmenu .over {
+    color: #333;
+    background-color: transparent
+}
+
+#ddmenu .over.no-sub {
+    color: #00b545;
+    background-color: #12ac44;
+    border-radius: 0
+}
+
+#ddmenu .top-heading {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 28px;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+    text-transform: capitalize
+}
+
+#ddmenu a,
+#ddmenu a:hover,
+#ddmenu a:link {
+    color: inherit
+}
+
+#ddmenu a:hover {
+    text-decoration: underline
+}
+
+#ddmenu a:focus {
+    outline: #09F dotted 1px
+}
+
+#ddmenu .caret {
+    color: inherit;
+    left: -28px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2px;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: relative
+}
+
+#ddmenu .dropdown {
+    width: auto;
+    left: 0;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    border: 1px solid #00b545;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    -moz-box-shadow: 0 0 10px #00a63f;
+    -webkit-box-shadow: 0 0 10px #00a63f;
+    box-shadow: 0 0 10px #00a63f
+}
+
+#ddmenu .full-width .dropdown {
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+#ddmenu .offset300 {
+    left: -300px;
+    right: auto
+}
+
+#ddmenu .right-aligned {
+    left: auto;
+    right: 0
+}
+
+#ddmenu .over .dropdown {
+    display: block
+}
+
+#ddmenu .dd-inner {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    background-color: #FFF;
+    white-space: nowrap;
+    font-size: 13px;
+    height: 340px;
+    overflow-y: scroll;
+    opacity: 1
+}
+
+#ddmenu ul ul,
+#ddmenu ul ul li {
+    margin: 0;
+    display: block;
+    position: static;
+    background: 0 0
+}
+
+#ddmenu ul ul {
+    padding: 0;
+    text-align: left;
+    width: auto;
+    border: none;
+    z-index: 0;
+    border-radius: 0
+}
+
+#ddmenu ul ul li {
+    font-size: 11px;
+    padding: 6px 0;
+    color: inherit;
+    line-height: 1;
+    border: none;
+    transition: none;
+    border-radius: 0
+}
+
+#ddmenu .dropdown a {
+    color: #444;
+    line-height: 1;
+    text-decoration: none;
+    transition: color .2s;
+    font-size:12px;
+}
+
+#ddmenu .dropdown a:focus,
+#ddmenu .dropdown a:hover {
+    text-decoration: underline;
+    color: #00b545;
+    font-size:12px;}
+
+#ddmenu .column {
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    white-space: normal;
+    width: auto;
+    min-width: 200px;
+    padding: 0 30px;
+    border-right: 1px solid #00b545
+}
+
+#ddmenu .dd-inner ul:last-child {
+    border-right: none
+}
+
+#ddmenu h3 {
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333
+}
+
+#ddmenu li {
+    border-radius: 3px 3px 0 0
+}
+
+#ddmenu .menu-icon,
+#ddmenuLink {
+    display: none
+}
+
+@media only screen and (max-width:768px) {
+    #ddmenu .column.mayHide,
+    #ddmenu ul {
+        display: none
+    }
+    #ddmenu .dropdown,
+    #ddmenu .full-width,
+    #ddmenu li {
+        position: relative
+    }
+    #ddmenu ul {
+        width: 100%;
+        border-radius: 0
+    }
+    #ddmenu li {
+        display: block;
+        font-size: 20px;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 0
+    }
+    #ddmenu .dropdown {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: #F3F3F3
+    }
+    #ddmenu .offset300 {
+        left: 0
+    }
+    #ddmenu .full-width .dropdown {
+        width: auto
+    }
+    #ddmenu .dd-inner {
+        margin: 0;
+        background: 0 0;
+        text-align: left
+    }
+    #ddmenu .column {
+        width: auto;
+        padding: 0;
+        border: none;
+        display: block
+    }
+    #ddmenu .caret {
+        position: absolute;
+        left: auto;
+        right: 14px;
+        top: 19px;
+        border-width: 5px
+    }
+    #ddmenu .menu-icon {
+        font-size: 32px;
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        border-radius: 3px;
+        margin-bottom: 6px;
+        margin-left: 12px;
+        margin-right: auto
+    }
+    #ddmenu .menu-icon::before {
+        content: "";
+        position: absolute;
+        top: .25em;
+        left: 4px;
+        width: 1em;
+        height: .125em;
+        border-top: .375em double #333;
+        border-bottom: .125em solid #333;
+        box-sizing: content-box
+    }
+    #ddmenu .menu-icon-active {
+        background-color: transparent
+    }
+    #ddmenu .menu-icon-active::before {
+        border-color: #eee
+    }
+}
+
+@media screen and (max-width:767px) {
+    #ddmenu {
+        top: 10px;
+        left: 7px;
+        margin-top: 9px;
+        width: 400px
+    }
+    #ddmenu .menu-icon::before {
+        content: "";
+        position: absolute;
+        top: .25em;
+        left: 4px;
+        width: 1em;
+        height: .125em;
+        border-top: .375em double #FFF;
+        border-bottom: .125em solid #FFF;
+        box-sizing: content-box
+    }
+    #ddmenu .menu-icon-active {
+        background-color: transparent
+    }
+    #ddmenu .menu-icon-active::before {
+        border-color: #eee
+    }
+}
+
+@media(min-width:280px) and (max-width:325px) {
+    #ddmenu .dd-inner {
+        margin: 0;
+        margin-left: 0;
+        background: 0 0;
+        text-align: left;
+        margin-left: 20px
+    }
+}
+
+@media (min-width:340px) and (max-width:380px) {
+    #ddmenu {
+        top: 40px;
+        left: 7px;
+        margin-top: -17px;
+        width: 340px
+    }
+}
+
+@media (min-width:381px) and (max-width:450px) {
+    #ddmenu {
+        top: 49px;
+        left: 7px;
+        margin-top: -19px;
+        width: 380px
+    }
+}

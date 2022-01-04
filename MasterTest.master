@@ -1,0 +1,309 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterTest.master.cs" Inherits="MyBazarUser_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+    <title>Home |btbasket</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" href="CSS/mybazar.css" type="text/css" />
+    <link rel="Stylesheet" href="CSS/styles.css" type="text/css" />
+    <link rel="Stylesheet" href="CSS/new css.css" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" />
+    <link href="css/price-range.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <%--<link href="css/main.css" rel="stylesheet" />--%>
+    <link href="css/main1.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <%--<link rel="shortcut icon" href="images/ico/favicon.ico" />--%>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+</head>
+<!--/head-->
+
+<body>
+    <form id="form1" runat="server">
+       <header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						
+					</div>
+					<div class="col-sm-9">
+						<div class="shop-menu pull-right">
+                                    <ul class="nav nav-pills">
+                                        <li><a href="Home1.aspx"><i class="fa fa-home"></i>Home</a></li>
+                                        
+                                        <li><a href="#"><i class="fa fa-envelope"></i>info@btbasket.com</a></li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo pull-left">
+							<a href="home"><img src="images/home/logo_03.png" alt="btbasket-img" /></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+        
+		<!--/header-bottom-->
+	</header><br /><br />
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    
+                </div>
+                <div class="col-sm-10">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+<div id="footer">
+<div class="footer-top">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 top-buffer">
+    <div class="hovereffect">
+       <img class="img-responsive" src="images/home/masala.jpg" alt="">
+            <div class="overlay">
+                <h2>SPICES & MASALA</h2>
+				<p>
+					<a href="grocery?N=Spices-Masala">CLICK HERE TO VISIT</a>
+				</p>
+            </div>
+        
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 top-buffer">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/banner/household-banner.jpg" alt="">
+            <div class="overlay">
+                <h2>HOUSEHOLD ITEMS</h2>
+				<p>
+					<a href="Catagory?N=Household">CLICK HERE TO VISIT</a>
+				</p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 top-buffer">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/home/Tea-Coffee-Banner.jpg" alt="">
+            <div class="overlay">
+                <h2>BEVERAGES</h2>
+				<p>
+					<a href="Catagory?N=Beverages">CLICK HERE TO VISIT</a>
+				</p>
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 top-buffer">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/home/personalcare-large-banner.jpg" alt="">
+            <div class="overlay">
+                <h2>PERSONAL CARE</h2>
+				<p>
+					<a href="Catagory?N=Personal Care">CLICK HERE TO VISIT</a>
+				</p>
+            </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+                <%--<div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="companyinfo">
+                                <h2><span>bt</span>basket</h2>
+                                <p>ONLINE GROCERY STORE AT YOUR DOOR</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="col-sm-3">
+                                <div class="video-gallery text-center">
+                                    <a href="catagory?N=Beverages">
+                                        <div class="iframe-img">
+                                            <img src="images/home/Beverages-Banner.jpg" alt="btbasket-Beverages" />
+                                        </div>
+                                        <div class="overlay-icon">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </div>
+                                    </a>
+                                    <p>Beverages</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="video-gallery text-center">
+                                    <a href="catagory?N=Household">
+                                        <div class="iframe-img">
+                                            <img src="images/home/Household-Banner.jpg" alt="btbasket-Household" />
+                                        </div>
+                                        <div class="overlay-icon">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </div>
+                                    </a>
+                                    <p>Household Items</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="video-gallery text-center">
+                                    <a href="catagory?N=Personal Care">
+                                        <div class="iframe-img">
+                                            <img src="images/home/Skin-Care Banner.jpg" alt="btbasket-Personal Care" />
+                                        </div>
+                                        <div class="overlay-icon">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </div>
+                                    </a>
+                                    <p>Skin Care Items</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="video-gallery text-center">
+                                    <a href="catagory?N=Bakery-Diary">
+                                        <div class="iframe-img">
+                                            <img src="images/home/Bakery-Banner.jpg" alt="btbasket-Bakery-Diary" />
+                                        </div>
+                                        <div class="overlay-icon">
+                                            <i class="fa fa-play-circle-o"></i>
+                                        </div>
+                                    </a>
+                                    <p>Bakery Items</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="address">
+                                <img src="images/home/map.png" alt="btbasket-map" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>--%>
+            </div>
+<div class="footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Service</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="MyBazarAdmin/AdminLogin.aspx">Administrator</a></li>
+                                    <li><a href="#">Order Status</a></li>
+                                    <li><a href="feedback">Feedback</a></li>
+                                    <li><a href="faq">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Quick Shop</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="catagory?N=Grocery">Grocery</a></li>
+                                    <li><a href="catagory?N=Personal Care">Personal Care</a></li>
+                                    <li><a href="catagory?N=Beverages">Beverages</a></li>
+                                    <li><a href="catagory?N=Branded Food">Branded Food</a></li>
+                                    <li><a href="catagory?N=Household">Household</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Policies</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="term-and-condition">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="return-refund">Refund Policy</a></li>
+                                    <li><a href="sitemap">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Know Me</h2>
+                               <%-- <ul class="nav nav-pills nav-stacked">--%>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="about">About Us</a></li>
+                                    <li><a href="contact">Contact Us</a></li>
+                                    <li><a href="#">info@btbasket.com</a></li>
+                                    <li><a href="user-review">User Review</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <div class="single-widget">
+                               <%-- <h2>Social Media</h2>--%>
+                                <div class="social-icons">
+                                    <ul class="footer-social pull-left">
+                                        <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><br />
+                
+            </div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row float-lt">
+                    <p style="color:white;font-size:small;">Copyright © 2018 BTsoftnet Services. All rights reserved.</p>
+                </div>
+</div>
+        </div>
+
+</div>
+    </form>
+
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollUp.min.js" type="text/javascript"></script>
+    <script src="js/price-range.js" type="text/javascript"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('.header-middle,.header-bottom').addClass("sticky");
+                $('.header-bottom').addClass("sticky1");
+            }
+            else {
+                $('.header-middle,.header-bottom').removeClass("sticky");
+                $('.header-bottom').removeClass("sticky1");
+            }
+        });
+    </script>
+</body>
+</html>

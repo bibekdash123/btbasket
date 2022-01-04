@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAfterLogin.master.cs" Inherits="MyBazarUser_MyBazar" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="description" content="BTbasket is ready all day for online delivery of groceries, health beauty & baby supplies at wholesale price without leaving the convenience of your home."/>
+    <meta name="keywords" content="online delivery bhubaneswar, online shopping bhubaneswar, online supermarket bhubaneswar, home delivery bhubaneswar, door service bhubaneswar, online delivery service in bhubaneswar, best online delivery service in bhubaneswar, online grocery in odisha, online grocery delivery service in odisha, online home delivery odisha, ecoomerce bhubaneswar, online shopping cart bhubaneswar, "/>
+    <%--<meta charset="utf-8"/>--%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robot" content="index,follow" />
+    <meta name="copyright" content="Copyright © 2018 BTsoftnet services . All Rights Reserved." />
+    <meta name="author" content="btbasket.com" />
+    <meta name="revisit-after" content="7 days" />
+    <title>Home |btbasket</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link rel="Stylesheet" href="../css/ddmenu.css" type="text/css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../css/prettyPhoto.css" rel="stylesheet"/>
+    <link href="../css/price-range.css" rel="stylesheet"/>
+    <link href="../css/animate.css" rel="stylesheet"/>
+    <link href="../css/main1.css" rel="stylesheet" />
+	<link href="../css/responsive.css" rel="stylesheet"/>
+    <script src="../js/ddmenu.js" type="text/javascript"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    </head><!--/head-->
+
+<body>
+    <form id="form1" runat="server">
+<header id="header">	
+<div class="header-middle headeradmin">
+<div class="container ">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo hidden-sm hidden-xs pull-left">
+							<a href="AddItem.aspx"><img src="../images/home/logo_03.png" alt="" /></a>
+						</div>
+						
+					</div>
+					<div class="col-sm-6 hidden-lg hidden-md ">
+						<div class="logoadmin">
+							<a href="AddItem.aspx"><img src="../images/home/logo_03.png" alt="" /></a>
+						</div>
+                        <div class="shop-menu pull-admin">
+                                    <ul>
+                                        
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false"><i class="fa fa-user">ADMIN</i><b class="caret"></b></a>
+    <ul class="dropdown-menu">
+<li><a href="TotalOrders.aspx"><span>TOTAL ORDER</span></a></li><div class="divider"></div>
+<li><a href="PendingTransaction.aspx"><span>PENDING TRANSACTION</span></a></li><div class="divider"></div>
+<li><a href="CompleteTransaction.aspx"><span>COMPLETE TRANSACTIONS</span></a></li><div class="divider"></div>
+<li><a href="ProductDetail.aspx"><span>EDIT PRODUCT</span></a></li><div class="divider"></div>
+<li><a href="AddSaleDetail.aspx"><span>UPLOAD SALE DETAIL</span></a></li><div class="divider"></div>
+<li><a href="SaleDetails.aspx"><span>SALES REPORT</span></a></li><div class="divider"></div>
+<li><a href="Users.aspx"><span>USER DETAIL</span></a></li><div class="divider"></div>
+<li><a href="Userfeedback.aspx"><span>FEEDBACK</span></a></li><div class="divider"></div>
+<li><a href="Update_Order.aspx"><span>STATUS UPDATE</span></a></li><div class="divider"></div>
+<li><a href="AdminLogin.aspx"><span>LOGOUT</span></a></li>
+    </ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-3 hidden-sm hidden-xs">
+<div class="shop-menu pull-right">
+
+</div>
+</div>
+</div>
+</div>
+</div>    
+</header>
+<div class="row top-buffer"></div><%--<div class="row top-buffer"></div><div class="row top-buffer"></div>--%>
+<div class="row">
+<div class="col-md-3 ">
+<div class="cartdiv">
+<div  class="panel panel-default hidden-sm hidden-xs">
+    <div class="sidepanel-user">
+<asp:Label ID="Label3" runat="server" ></asp:Label>
+    </div>
+    <div class="panel-body sidepanel-body">
+
+<ul>
+<li><a href="TotalOrders.aspx"><span>TOTAL ORDER</span></a></li>
+<li><a href="PendingTransaction.aspx"><span>PENDING TRANSACTION</span></a></li>
+<li><a href="CompleteTransaction.aspx"><span>COMPLETE TRANSACTIONS</span></a></li>
+<li><a href="ProductDetail.aspx"><span>EDIT PRODUCT</span></a></li>
+<li><a href="AddSaleDetail.aspx"><span>UPLOAD SALE DETAIL</span></a></li>
+<li><a href="SaleDetails.aspx"><span>SALES REPORT</span></a></li>
+<li><a href="Users.aspx"><span>USER DETAIL</span></a></li>
+<li><a href="Userfeedback.aspx"><span>FEEDBACK</span></a></li>
+<li><a href="Update_Order.aspx"><span>STATUS UPDATE</span></a></li>
+<li><a href="AdminLogin.aspx"><span>LOGOUT</span></a></li>
+</ul>
+
+
+    </div>
+</div>
+</div>               
+</div>
+<div class="col-md-8">
+<div class="row top-buffer"></div><div class="row top-buffer"></div>
+<div class="features_items features_itemsedit">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+</div>
+</div>
+<%--<div class="col-md-1"></div>--%>
+</div>
+
+<div id="footer">       
+<div class="footer-bottom">
+<div class="container">
+<div class="row text-center">
+<p style="color:white;font-size:small;letter-spacing:3px">Copyright © 2018 BTsoftnet Services. All rights reserved.</p>
+    <p><a href="../Landing.aspx" style="color:#fff" target="_blank">LIVE VIEW</a></p>
+</div>
+</div>
+</div>
+</div>
+	</form>
+
+  
+    <script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.scrollUp.min.js" type="text/javascript"></script>
+	<script src="../js/price-range.js" type="text/javascript"></script>
+    <script src="../js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+    <%--<script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('.header-middle,.header-bottom').addClass("sticky");
+                $('.header-bottom').addClass("sticky1");
+            }
+            else {
+                $('.header-middle,.header-bottom').removeClass("sticky");
+                $('.header-bottom').removeClass("sticky1");
+            }
+        });
+    </script>--%>
+    
+</body>
+</html>

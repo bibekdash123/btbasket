@@ -1,0 +1,1110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="description" content="Buy grocery at lowest price online in bhubaneswar having 7000 plus items with best prices so far." />
+    <meta name="keywords" content="online grocery, online shopping in bhubaneswar, online supermarket in bhubaneswar, home delivery bhubaneswar,online grocery in odisha, online grocery delivery service in odisha, online home delivery odisha,online shopping cart bhubaneswar,online grocery delivery in india,Cheapest Grocery In Bhubaneswar,Online Grocery In Bhubaneswar " />
+    <%--<meta charset="utf-8" />--%>
+    <meta http-equiv="Content-Type" content="text/html; charset= utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robot" content="index,follow" />
+    <meta name="copyright" content="Copyright © 2018 BTsoftnet services . All Rights Reserved." />
+    <meta name="author" content="btbasket.com" />
+    <meta name="revisit-after" content="7 days" />
+    <title>Online Grocery In Bhubaneswar,Buy Grocery,Personal care,Household Items At Low Price</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <%--<meta http-equiv="refresh" content="600"/>--%>
+    <link rel="icon" type="image/x-icon" href="newlogo.png"/>
+    <%--<link rel="Stylesheet" href="css/ddmenu.css" type="text/css" />--%>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   <%-- <link href="../addons/bootstrap/jquery.smartmenus.bootstrap.css" rel="stylesheet" type="text/css" />--%>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main1.css" rel="stylesheet" type="text/css" />
+    <link href="css/Style1.css" rel="stylesheet" type="text/css" />
+    <%--<link href="css/float-label.css" rel="Stylesheet" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />--%>
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+</head>
+<body">
+<div id="load"></div>
+<div id="contents">
+<form id="form1" runat="server">
+<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+<header id="header">
+<div class="header_top">
+<div class="container">
+<div class="row">
+<div class="col-sm-3">
+<asp:Label ID="LblArea" runat="server"></asp:Label>
+</div>
+<div class="col-sm-9">
+
+</div>
+</div>
+</div>
+</div>
+<div class="header-middlemaster"><!--header-middle-->
+<div class="container">
+<div class="row row-centred">
+<div class="col-md-2">
+<div class="logo">
+<a href="index"><img src="images/home/logo_03.png" alt="btbasket" class="headerimage" /></a>
+</div>
+</div>
+<div class="col-sm-4 hidden-sm hidden-xs">
+<div class="input-group">
+<asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Search Product From More Than 7000+ SKU's"></asp:TextBox>
+<span class="input-group-btn">
+<asp:LinkButton ID="btnRandom" runat="server" class="btn btn-success" OnClick="btnRandom_Click" CausesValidation="false">
+<span class="glyphicon glyphicon-search"></span>Search
+</asp:LinkButton>
+</span>
+</div>
+
+</div>
+<div class="col-md-2 hidden-lg hidden-md">
+</div>
+<div class="col-md-4 hidden-sm hidden-xs pull-right">
+<a href="#" class="masterlink" data-toggle="modal" data-target="#myModal1" >Login & Signup</a>
+<%--<a href="#" class="masterlink" data-toggle="modal" data-target="#myModal1" >REGISTER</a>--%>
+</div></div></div></div>
+<div class="header-bottom">
+<div class="row hidden-lg hidden-md">
+<a href="#" class="masterlink" data-toggle="modal" data-target="#myModal1" >Login & Signup</a>
+<%--<a href="#" class="masterlink" data-toggle="modal" data-target="#myModal1" >REGISTER</a>--%>
+</div>
+<div class="container">
+<div class="navbar-header">
+</div>
+<div id="ddmenu">
+    <div class="menu-icon"></div>
+    <ul>
+        
+        <li class="full-width">
+            <span class="top-heading">Grocery & Staples</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                        <li><h4>Dal Pulses</h4></li>
+                        <li><a href="product?N=Toor Dal"><span>Toor Dal(Harada Dali)</span></a></li>
+                            <li><a href="product?N=Buta Dali"><span>Buta Dal</span></a></li>
+                            <li><a href="product?N=Masoor Dal"><span>Redgram Dal(Masoor Dali)</span></a></li>
+                            <li><a href="product?N=Moong Dal"><span>Moong Dal(Muga Dali)</span></a></li>
+                            <li><a href="product?N=Kabuli-Buta"><span>Kabuli-Buta</span></a></li>
+                            <li><a href="product?N=Sola-Buta"><span>Sola-Buta</span></a></li>
+                            <li><a href="product?N=Matar"><span>Matar</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Edible Oil & Ghee</h4></li>
+                        <li><a href="product?N=Mustard Oil"><span>Mustard Oil</span></a></li>
+                            <li><a href="product?N=Refined Oil"><span>Refined Oil</span></a></li>
+                            <li><a href="product?N=Ricebran Oil"><span>Ricebran Oil</span></a></li>
+                            <li><a href="product?N=Olive Oil"><span>Olive Oil</span></a></li>
+                            <li class='last'><a href="product?N=Ghee"><span>Ghee</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Salt-Sugar</h4></li>
+                        <li><a href="product?N=Salt"><span>Salt</span></a></li>
+                            <li><a href="product?N=Sugar"><span>Sugar</span></a></li>
+                            <li><a href="product?N=Molases"><span>Molases(Guda)</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Flour-Sooji</h4></li>
+                            <li><a href="product?N=Besan"><span>Besan</span></a></li>
+                            <li><a href="product?N=Maida"><span>Maida</span></a></li>
+                            <li><a href="product?N=Sooji"><span>Sooji</span></a></li>
+                            <li><a href="product?N=Atta"><span>Wheat Flour(Atta)</span></a></li>
+                            <li><a href="product?N=Dalia"><span>Dalia</span></a></li>
+                            <li><a href="product?N=Sagoo"><span>Sagoo</span></a></li>
+							<li><a href="product?N=Cornflour"><span>Cornflour</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Dal Pulses</h4></li>
+                        <li><a href="product?N=Raw Rice"><span>Raw Rice(Arua Chaula)</span></a></li>
+                            <li><a href="product?N=Boiled Rice"><span>Boiled Rice(Usuna Chaula)</span></a></li>
+                            <li><a href="product?N=Basmati Rice"><span>Basmati Rice</span></a></li>
+                            <li><a href="product?N=Kheer Rice"><span>Kheer Rice</span></a></li>
+                            <li><a href="product?N=Flatten Rice"><span>Chuda(Poha)</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Dry Fruits-Nuts</h4></li>
+							<li><a href="product?N=Almond"><span>Almond</span></a></li>
+                            <li><a href="product?N=Cashew"><span>Cashew</span></a></li>
+                            <li><a href="product?N=Kismis"><span>Kismis</span></a></li>
+                            <li><a href="product?N=Charmagaj"><span>Charmagaj</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Spices & Masala</h4></li>
+							<li><a href="product?N=Spices-Masala"><span>Masala</span></a></li>
+                            <li><a href="product?N=Whole-Spices"><span>Whole Spices</span></a></li>
+							<li class="divider"></li>
+							<li><h3><a href="catagory?N=Grocery"><span>All Grocery</span></a></h3></li>
+                   </ul>
+                    
+                </div>
+            </div>
+        </li>
+        <li class="full-width">
+            <span class="top-heading">Personal Care</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                        <li><h4>Hair Care</h4></li>
+							<li><a href="product?N=Hair Oil"><span>Hair Oil</span></a></li>
+                            <li><a href="product?N=Hair Conditioner"><span>Hair Conditioner</span></a></li>
+                            <li><a href="product?N=Hair Color"><span>Hair Colour-Dyes</span></a></li>
+                            <li><a href="product?N=Shampoo"><span>Shampoo</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Personal Hygiene</h4></li>
+							<li><a href="product?N=Body Wash"><span>Body Wash</span></a></li>
+                            <li><a href="product?N=Face Wash"><span>Face Wash</span></a></li>
+                            <li><a href="product?N=Hand Wash"><span>Hand Wash</span></a></li>
+                            <li><a href="product?N=Soap"><span>Liquid Soap-Bars</span></a></li>
+                            <li><a href="product?N=Face Mask"><span>Face Mask</span></a></li>
+                    </ul>
+                    <ul class="column">
+                            <li><h4>Oral Care</h4></li>
+							<li><a href="product?N=Mouth Wash"><span>Mouth Wash</span></a></li>
+                            <li><a href="product?N=Tooth Paste"><span>Tooth Paste</span></a></li>
+                            <li><a href="product?N=Tooth Brush"><span>Tooth Brush</span></a></li>
+							<li class="divider"></li>
+                            <li><h4>Deos & perfumes</h4></li>
+							<li><a href="product?N=Deos-Perfumes"><span>Deos-Perfumes</span></a></li>
+							<li class="divider"></li>
+                            <li><h4>Nail Care</h4></li>
+							<li><a href="product?N=Nail Polish"><span>Nail Polish</span></a></li>
+                            <li><a href="product?N=Nail Remover"><span>Nail Remover</span></a></li>
+							<li class="divider"></li>
+                            <li><h4>Sanitary Needs</h4></li>
+							<li><a href="product?N=Shaving Cream-Lotion"><span>Shaving Cream-Lotion</span></a></li>
+                            <li><a href="product?N=Shaving Razor-Blade"><span>Shaving Razor-Blade</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Skin Care</h4></li>
+                        <li><a href="product?N=Body Lotion"><span>Body Lotion</span></a></li>
+                            <li><a href="product?N=Face Cream"><span>Face Cream</span></a></li>
+                            <li><a href="product?N=Face Powder"><span>Face Powder</span></a></li>
+                            <li><a href="product?N=Face Scrub"><span>Face Scrub</span></a></li>
+                            <li><a href="product?N=Manicure"><span>Manicure</span></a></li>
+                            <li><a href="product?N=Pedicure"><span>Pedicure</span></a></li>
+                            <li><a href="product?N=Body Massage"><span>Body Massage</span></a></li>
+                            <li><a href="product?N=Face Massage"><span>Face Massage</span></a></li>
+                            <li><a href="product?N=Face Foundation"><span>Face Foundation</span></a></li>
+                            <li><a href="product?N=Face Pack"><span>Face Pack</span></a></li>
+                            <li><a href="product?N=Serum"><span>Serum</span></a></li>
+                            <li class="divider"></li>
+							<li><h3><a href="catagory?N=Personal Care"><span>All PersonalCare</span></a></h3></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Baby Care</h4></li>
+							<li><a href="product?N=Baby Oil"><span>Baby Oil</span></a></li>
+                            <li><a href="product?N=Baby Shampoo"><span>Baby Shampoo</span></a></li>
+                            <li><a href="product?N=Baby Powder"><span>Baby Powder</span></a></li>
+                            <li><a href="product?N=Baby Cream"><span>Baby Cream</span></a></li>
+                            <li><a href="product?N=Baby OralCare"><span>Baby OralCare</span></a></li>
+                            <li><a href="product?N=Baby Pad"><span>Baby Pad</span></a></li>
+                            <li><a href="product?N=Baby Wipes"><span>Baby Wipes</span></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </li>
+        <li class="full-width">
+            <span class="top-heading">Household</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                        <li><h4>Detergents</h4></li>
+							<li><a href="product?N=Liquid Detergent"><span>Liquid Detergent</span></a></li>
+                            <li><a href="product?N=Washing Bar"><span>Washing Bar</span></a></li>
+                            <li><a href="product?N=Washing Powder"><span>Washing Powder</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Pooja Needs</h4></li>
+							<li><a href="product?N=Agarbati"><span>Agarbati</span></a></li>
+                            <li><a href="product?N=Match Box"><span>Match Box</span></a></li>
+                            <li><a href="product?N=Pitambari"><span>Pitambari</span></a></li>
+                            <li><a href="product?N=Jhuna"><span>Jhuna</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Cleaners</h4></li>
+                        
+							<li><a href="product?N=Floor Cleaner"><span>Floor Cleaner</span></a></li>
+                            <li><a href="product?N=Glass Cleaner"><span>Glass Cleaner</span></a></li>
+                            <li><a href="product?N=Kitchen Cleaner"><span>Kitchen Cleaner</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Toilet Cleaner</h4></li>
+							<li><a href="product?N=Toilet Cleaner"><span>Toilet Cleaner</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Utencil Cleaner</h4></li>
+							<li><a href="product?N=Dish-Wash"><span>Dish Wash Bar & Liquid</span></a></li>
+                            <li><a href="product?N=Dish Wash Powder"><span>Dish Wash Powder</span></a></li>
+                            <li><a href="product?N=Dish-Wash"><span>Scotch Brite</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Cleaning Accessories</h4></li>
+							<li><a href="product?N=Kitchen Gloves"><span>Kitchen Gloves</span></a></li>
+                            <li class='last'><a href="product?N=Brush"><span>Brushes</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Freshners</h4></li>
+							<li><a href="product?N=Air Freshner"><span>Air Freshners</span></a></li>
+                            <li><a href="product?N=Repellent"><span>Repellent</span></a></li>
+                            <li class="divider"></li>
+							<li><h3><a href="catagory?N=Household"><span>All HouseHold</span></a></h3></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </li>
+        <li class="full-width">
+            <span class="top-heading">Beverages</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                        <li><h4>Juice</h4></li>
+							<li><a href="product?N=Fruit Juice"><span>Fruit Juice</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Soft Drink</h4></li>
+							<li><a href="product?N=Soft Drinks"><span>Soft Drinks</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Tea & Coffee</h4></li>
+							<li><a href="product?N=Green Tea"><span>Green Tea</span></a></li>
+                            <li><a href="product?N=Herbal Tea"><span>Herbal Tea</span></a></li>
+                            <li><a href="product?N=Instant Coffee"><span>Instant Coffee</span></a></li>
+                            <li><a href="product?N=Organic Coffee"><span>Organic Coffee</span></a></li>
+                            <li class="last"><a href="beverage?N=Tea"><span>Tea</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Health Drinks</h4></li>
+							<li><a href="product?N=Health Drink"><span>Health Drinks</span></a></li>
+                            <li><a href="product?N=Energy Drink"><span>Energy Drinks</span></a></li>
+                           <li><h3><a href="Catagory?N=Beverages"><span>All Beverages</span></a></h3></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="full-width">
+            <span class="top-heading">Bakery-Diary</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                        <li><h4>Dal Pulses</h4></li>
+                        <ul>
+							<li><a href="product?N=Breads-Cakes"><span>Breads-Cakes</span></a></li>
+                            <li class='last'><a href="product?N=Rusk-Khara"><span>Rusk-Khara</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Diary Products</h4></li>
+							<li><a href="product?N=Milk-Dahi"><span>Milk & Dahi</span></a></li>
+                            <li><a href="product?N=Lassi"><span>Lassi</span></a></li>
+                            <li><a href="product?N=Dairy Whitener"><span>Dairy Whitener</span></a></li>
+                            <li class='last'><a href="product?N=Butter-Cheese"><span>Butter & Cheese</span></a></li>
+						</ul>
+                    </ul>
+                    
+                    <ul class="column mayHide">
+                        
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="full-width">
+            <span class="top-heading">Branded Food</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                       <li><h4>Pickle & Jam</h4></li>
+							<li><a href="product?N=Pickles"><span>Pickles</span></a></li>
+                            <li><a href="product?N=Jam"><span>Jam</span></a></li>
+                            <li><a href="product?N=Honey"><span>Honey</span></a></li>
+                            <li class="divider"></li>
+							<li><h4>Ready To Cook</h4></li>
+                            <li><a href="product?N=Papad"><span>Papad</span></a></li>
+                            <li><a href="product?N=Soup"><span>Soup</span></a></li>
+                            <li><a href="product?N=Vermicelli"><span>Vermicelli</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Noodles</h4></li>
+							<li><a href="product?N=Noodles"><span>Instant Noodles</span></a></li>
+                            <li><a href="product?N=Noodles"><span>Chinese Noodles</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Protein Powder</h4></li>
+							<li><a href="product?N=Protein Powder"><span>Protein Powder</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Biscuit & Cakes</h4></li>
+							<li><a href="product?N=Biscuits"><span>Biscuits</span></a></li>
+                            <li><a href="product?N=Mixture"><span>Mixture</span></a></li>
+                            <li><a href="product?N=Cakes"><span>Cakes</span></a></li>
+                            <li class="divider"></li>
+                            <li><h4>Sauce & Ketchup</h4></li>
+							<li><a href="product?N=Sauce-Ketchup"><span>Sauce & Ketchup</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Food Flavour & Color</h4></li>
+							<li><a href="product?N=Food Flavour"><span>Food Flavour</span></a></li>
+                            <li><a href="product?N=Food Color"><span>Food Color</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Snacks</h4></li>
+							<li><a href="product?N=Namkeen"><span>Namkeen</span></a></li>
+                            <li><a href="product?N=Chips"><span>Chips</span></a></li>
+                            <li class="divider"></li>
+                            <li><h4>Chocolates</h4></li>
+							<li><a href="brandedfood?N=Chocolates"><span>Milk Chocolate</span></a></li>
+                            <li><a href="brandedfood?N=Chocolates"><span>Candy</span></a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><h4>Breakfast Cereals</h4></li>
+							<li><a href="product?N=Breakfast Cereals"><span>Breakfast Cereals</span></a></li>
+							<li class="divider"></li>
+                            <li><h4>Soya Foods</h4></li>
+                            <li><a href="product?N=Soya Chunks"><span>Soya Chunks</span></a></li>
+							<li><h3><a href="catagory?N=Branded Food"><span>All BrandedFood</span></a></h3></li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </li>
+        <li class="full-width">
+            <span class="top-heading">Office Stationary</span>
+            <i class="caret"></i>
+            <div class="dropdown">
+                <div class="dd-inner">
+                    <ul class="column">
+                       <li><h4>Pen&Pencil</h4></li>
+							<li><a href="product?N=Pen"><span>Pen</span></a></li>
+                            <li><a href="product?N=Pencil"><span>Pencil</span></a></li>
+                            <li><a href="product?N=Marker"><span>Marker</span></a></li>
+                            <li class="divider"></li>
+							<li><h4>Eraser</h4></li>
+                            <li><a href="product?N=Eraser"><span>Eraser</span></a></li>
+                            <li><a href="product?N=Sharpner"><span>Sharpner</span></a></li>
+                            <li><a href="product?N=Whitener"><span>Whitener</span></a></li>
+							<li class="divider"></li>
+							<li><h4>Folder & Staples</h4></li>
+							<li><a href="product?N=Folder"><span>Folder</span></a></li>
+                            <li><a href="product?N=Stapler"><span>Stapler</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</div>
+</div>
+</header>
+<div class="space"></div>
+<div id="myModal1" class="modal fade" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">
+<div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+	<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<div class="panel panel-default">
+            
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Login</a></li>
+<li><a href="#tab2" data-toggle="tab">Register</a></li>
+</ul>
+<%--</div>--%>
+<div class="panel-body">
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<asp:Panel ID="PanelLogin" runat="server" DefaultButton="BtnLogin">
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
+<asp:TextBox ID="TxtMobile"  CssClass="modaltxtbox" runat="server" placeholder="Mobile Number"></asp:TextBox>
+</div>
+<asp:RequiredFieldValidator ID="RequiredMail" runat="server" CssClass="text-danger" ControlToValidate="TxtMobile" ErrorMessage="Mobile Number Required"></asp:RequiredFieldValidator>            
+</div>
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
+<asp:TextBox ID="TxtPassword" CssClass="modaltxtbox" runat="server" TextMode="Password" placeholder="Enter Password Here"></asp:TextBox>
+</div>
+<asp:RequiredFieldValidator ID="RequiredPassword" runat="server" ControlToValidate="TxtPassword" ErrorMessage="Password Required"></asp:RequiredFieldValidator>
+</div>
+<div class="form-group">
+<asp:Button ID="BtnLogin" runat="server" Text="LOGIN" TabIndex="0" CssClass="btn btn-success btn-lg btn-block" data-toggle="tooltip" CausesValidation="false" OnClick="BtnLogin_Click"></asp:Button>
+<asp:Button ID="Btnpwd" runat="server" CssClass="btn btn-link btn-sm" Text="Forget Password" TabIndex="2" OnClick="Btnpwd_Click" CausesValidation="false" />
+</div>
+</asp:Panel>
+</div>
+<div class="tab-pane" id="tab2">
+<asp:Panel ID="PanelRegister" runat="server" DefaultButton="BtnRegister">
+<asp:UpdatePanel ID="updateregister" runat="server">
+    <ContentTemplate>
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+<asp:TextBox ID="TxtMail" CssClass="modaltxtbox" runat="server" OnTextChanged="TxtMail_TextChanged"  AutoPostBack="true" placeholder="Enter Email ID"></asp:TextBox>
+</div>
+<asp:RegularExpressionValidator ID="RegularExpEmail" runat="server" ErrorMessage="Enter valid email..." ControlToValidate="TxtMail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+</div>
+    </ContentTemplate>
+</asp:UpdatePanel>
+
+<div class="form-group"> 
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+<asp:TextBox ID="TxtName" CssClass="modaltxtbox" runat="server" placeholder="Users Full Name"></asp:TextBox>
+</div>
+<asp:RequiredFieldValidator ID="RequiredName" runat="server" CssClass="text-danger" ControlToValidate="TxtName" ErrorMessage="Name Required"></asp:RequiredFieldValidator>       
+</div>
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
+<asp:TextBox ID="TxtPhone" CssClass="modaltxtbox" runat="server" placeholder="Users Mobile Number"></asp:TextBox>
+</div>
+<asp:RegularExpressionValidator ID="RegularExpMob" runat="server" ErrorMessage="Only Mobile Number..." ControlToValidate="TxtPhone" ValidationExpression="^[7-9][0-9](\s){0,1}(\-){0,1}(\s){0,1}[0-9]{1}[0-9]{7}$"></asp:RegularExpressionValidator>
+</div>
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
+<asp:TextBox ID="TxtPwd" CssClass="modaltxtbox" runat="server" TextMode="Password" placeholder="Users Login Password"></asp:TextBox>
+</div>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="text-danger" ControlToValidate="TxtPwd" ErrorMessage="Password Required"></asp:RequiredFieldValidator>
+</div>
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-book"></span></span>
+<asp:TextBox ID="TxtAddress" CssClass="modaltxtbox" runat="server" placeholder="Desired Delivery Address"></asp:TextBox>
+</div>
+<asp:RequiredFieldValidator ID="RequiredAddress" runat="server" CssClass="text-danger" ControlToValidate="TxtAddress" ErrorMessage="Address Required"></asp:RequiredFieldValidator>
+</div>
+<div class="form-group">
+<div class="input-group">
+<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+<asp:TextBox ID="TxtPin" CssClass="modaltxtbox" runat="server" placeholder="Area Pincode"></asp:TextBox>
+</div>
+<asp:RequiredFieldValidator ID="RequiredPin" runat="server" CssClass="text-danger" ControlToValidate="TxtPin" ErrorMessage="Pin Number Required"></asp:RequiredFieldValidator>
+</div>
+
+<div class="form-group">
+<asp:Button ID="BtnRegister" CssClass="btn btn-success btn-lg btn-block" runat="server" TabIndex="1" Text="Register" OnClick="BtnRegister_Click"  CausesValidation="false" />
+
+</div> 
+</asp:Panel>
+                          
+
+                        </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2"></div>
+	</div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="containerslider">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">   
+<div class="carousel-inner">
+<div class="item active">
+          <a href="product-brand?N=Cadbury"><img src="images/Banner/btbasket-cadbury.jpg" alt="btbasket-cadbury"/></a>
+           <div class="carousel-caption">
+          </div>
+        </div>
+<div class="item">
+          <a href="beverage?N=Instant Coffee"><img src="images/Banner/nescafe-banner.png" alt="btbasket-coffee"/></a>
+           <div class="carousel-caption">
+           
+            
+          </div>
+        </div>
+<div class="item">
+          <a href="product-brand?N=Dove"><img src="images/Banner/dove-banner-carousel.jpg" alt="btbasket-dove"/></a>
+           <div class="carousel-caption">
+            
+            
+          </div>
+        </div>
+<div class="item">
+          <a href="grocery?N=Spices-Masala"><img src="images/Banner/masala-banner.jpg" alt="btbasket-masala"/></a>
+           <div class="carousel-caption">
+            
+            
+          </div>
+        </div>
+
+               
+</div><!-- End Carousel Inner -->
+<ul class="nav nav-pills nav-justified hidden-sm hidden-xs">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="brandedfood?N=Chocolates">Cadbury<small>Buy1 Get 1 Free Worth Rs 10/-</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="1"><a href="beverage?N=Instant Coffee">Coffee<small>Grab Nescafe At More Than 5% Off</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="2"><a href="product-brand?N=Dove">Soap<small>Buy 3 Get 1 Free</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="3"><a href="grocery?N=Spices-Masala">Masala<small>Upto 12% Off</small></a></li>
+          
+        </ul>
+</div><!-- End Carousel -->
+</div>
+<div class="row top-buffer3"></div><div class="row top-buffer3"></div>
+<div class="row down-buffer1">
+<div class="col-md-3 col-xs-6">
+<div class="single-promo promo1">
+<i class="fa famasterpage fa-refresh"></i>
+<p class="pmaster">Easy Return..</p>
+</div>
+</div>
+<div class="col-md-3 col-xs-6">
+<div class="single-promo promo2">
+<i class="fa famasterpage fa-truck"></i>
+<p class="pmaster">Free shipping over Rs.500/-</p>
+</div>
+</div>
+<div class="col-md-3 col-xs-6">
+<div class="single-promo promo3">
+<i class="fa famasterpage fa-rupee"></i>
+<p class="pmaster">Price below MRP</p>
+</div>
+</div>
+<div class="col-md-3 col-xs-6">
+<div class="single-promo promo4">
+<i class="fa famasterpage fa-gift"></i>
+<p class="pmaster">Over 7000+ Products</p>
+</div>
+</div>
+</div>
+<div class="row divoffer">
+<div class="col-md-1"></div>
+<div class="col-md-2 columnwidth">
+        <div class="panel offerpanel">
+            <a href="btexclusive?N=Shampoo">
+            <div class="panel-body">
+                
+                <img src="images/Offer/patanjali-herbal-items.jpg" alt="btbasket-dove" class="shadow1" />
+            </div>
+            <div class="panel-footerhome1">
+               EXPLORE PATANJALI FROM BTBASKET....
+            </div>
+        </a>
+        </div>
+    </div>
+<div class="col-md-2 columnwidth">
+        <div class="panel offerpanel1">
+            <a href="btexclusive?N=Repellent">
+            <div class="panel-body">
+                
+                <img src="images/Offer/kids-food-product.jpg" alt="btbasket-goodknight" class="shadow1" />
+            </div>
+            <div class="panel-footerhome1">
+                KIDS ZONE...
+            </div>
+        </a>
+        </div>
+    </div>
+<div class="col-md-2 columnwidth">
+        <div class="panel offerpanel2">
+            <a href="btexclusive?N=Namkeen">
+            <div class="panel-body">
+                
+                <img src="images/Offer/village-food-product.jpg" alt="btbasket-soanpapdi" class="shadow1" />
+            </div>
+            <div class="panel-footerhome1">
+                OUR VILLAGE FOOD...
+            </div>
+        </a>
+        </div>
+    </div>
+<div class="col-md-2 columnwidth">
+        <div class="panel offerpanel3">
+            <a href="btexclusive?N=Hand Wash">
+            <div class="panel-body">
+                
+                <img src="images/Offer/hot-chips.jpg" alt="btbasket-dettol" class="shadow1" />
+            </div>
+            <div class="panel-footerhome1">
+                HOT CHIPS...
+            </div>
+        </a>
+        </div>
+    </div>
+<div class="col-md-1"></div>
+</div>
+<div class="row top-buffer2"></div>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-2 columnwidth">
+<div class="panel twologin">
+<div class="headingmaster">
+<h4 class="headingmastercolor">Explore dryfood here</h4>
+</div>
+<a href="Dryfood">
+<div class="panel-body">
+<img src="images/Banner/dry-food.jpg" alt="btbasket-dryfood" class="masteroffer" />
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-2 columnwidth">
+<div class="panel twologin">
+<div class="headingmaster">
+<h4 class="headingmastercolor">Monsoon food store</h4>
+</div>
+<a href="Monsoonfood">
+<div class="panel-body">
+<img src="images/Banner/monsoon-food.jpg" alt="btbasket-dryfood" class="masteroffer" />
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-2 columnwidth">
+<div class="panel twologin">
+<div class="headingmaster">
+<h4 class="headingmastercolor">Baby food zone</h4>
+</div>
+<a href="Babyfood">
+<div class="panel-body">
+<img src="images/Banner/baby-food.jpg" alt="btbasket-dryfood" class="masteroffer" />
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-2 columnwidth">
+<div class="panel twologin">
+<div class="headingmaster">
+<h4 class="headingmastercolor">New Lanuches</h4>
+</div>
+<a href="Newlaunches">
+<div class="panel-body">
+<img src="images/Banner/dry-food.jpg" alt="btbasket-dryfood" class="masteroffer" />
+</div>
+</a>
+</div>
+    </div>
+<div class="col-md-1"></div>
+</div>
+<div class="row top-buffer">
+<div class="col-md-4 ">
+<div class="features_items">
+    <a href="catagory?N=Personal Care"><h2 class="title text-center">Personal Care</h2></a>
+</div> 
+<%--<a href="catagory?N=Personal Care"><img src="images/Banner/new-PersonalCare.jpg" alt="Grocery" style="height:250px" class="img-responsive"/></a>--%>
+</div>
+<div class="col-md-4 ">
+<div class="features_items">
+     <a href="catagory?N=Household"><h2 class="title text-center">Household Items</h2></a>
+</div> 
+
+<%--<a href="catagory?N=Household"><img src="images/Banner/new-Household.jpg" alt="Grocery" style="height:250px" class="img-responsive"/></a>--%>
+    </div>
+<div class="col-md-4 ">
+<div class="features_items">
+     <a href="beverage?N=Tea"><h2 class="title text-center">Tea & Coffee</h2></a>
+</div>      
+<%--<a href="catagory?N=Beverages"><img src="images/Banner/new-tatateaveda.jpg" alt="Grocery" style="height:250px" class="img-responsive"/></a>--%>
+</div>   
+</div>
+<div class="row top-buffer">
+<div class="col-sm-4 ">
+<div class="features_items">
+     <a href="bread-bakery?N=Dairy Whitener"><h2 class="title text-center">Dairy Whiteners</h2></a>
+</div>
+<%--<a href="catagory?N=Bakery-Diary"><img src="images/Banner/new-dairy-whitener.jpg" alt="Grocery" style="height:250px" class="img-responsive"/></a>--%>
+</div>
+<div class="col-sm-4 ">
+<div class="features_items">
+     <a href="catagory?N=Branded Food"><h2 class="title text-center">Branded Foods</h2></a>
+</div>     
+<%--<a href="catagory?N=Branded Food"><img src="images/Banner/branded-food-banner.jpg" alt="Grocery" style="height:250px" class="img-responsive"/></a--%>        
+</div>
+<div class="col-sm-4 ">
+<div class="features_items">
+     <a href="Monsoonfood"><h2 class="title text-center">Monsoon Foods </h2></a>
+</div>
+<%--<a href="beverage?N=Fruit Juice"><img src="images/Banner/new-SummerStore.jpg" alt="Grocery" style="height:250px" class="img-responsive"/></a>--%>
+    </div>   
+</div>
+<div class="row top-buffer"></div>
+<div class="brands top-buffer">
+		<div class="container brands-agilemargin">
+		<h3>Brand Store</h3>
+			<div class="brands-agile">
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Tata">Tata</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Fortune">Fortune</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Freedom">Freedom</a></p>
+					</div>
+				</div>
+				
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Rista">Rista</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Ruchi">Ruchi</a></p>
+					</div>
+				</div>
+				<%--<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Everest">Everest</a></p>
+					</div>
+				</div>--%>
+				<div class="clearfix"></div>
+			</div>
+			<div class="brands-agile-1">
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Grihasthi">Grihasthi</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Dove">Dove</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Cinthol">Cinthol</a></p>
+					</div>
+				</div>
+				
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Pantene">Pantene</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Lux">Lux</a></p>
+					</div>
+				</div>
+				<%--<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Surf Excel">Surf Excel</a></p>
+					</div>
+				</div>--%>
+				<div class="clearfix"></div>
+			</div>
+			<div class="brands-agile-2">
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Axe">Axe</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Amul">Amul</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Britannia">Britannia</a></p>
+					</div>
+				</div>
+				
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Himalaya">Himalaya</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Patanjali">Patanjali</a></p>
+					</div>
+				</div>
+				<%--<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Loreal">Loreal</a></p>
+					</div>
+				</div>--%>
+				<div class="clearfix"></div>
+			</div>
+			<div class="brands-agile-1">
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Air Wick">Garnier</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Air Wick">Homefills</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Air Wick">India Gate</a></p>
+					</div>
+				</div>
+				
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Air Wick">Pears</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l">
+						<p><a href="product-brand?N=Air Wick" target="_blank">Mothers</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 w3layouts-brand">
+					<div class="brands-w3l brandviewmore">
+						<p><a href="brand" style="background-color:#ffd900;color:#111;font-size:30px;font-weight:100">View More</a></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+            
+		</div>
+	</div>
+<div class="container top-buffer">
+<div class="row">
+<div class="col-sm-12padding-right">
+<div>
+<div class="features_items">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<br />
+<div id="footer">
+<div class="footer-top">
+
+<div class="clearfix"></div>
+
+            </div>
+<div class="footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Service</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="Admin/AdminLogin.aspx">Administrator</a></li>
+                                    <li><a href="MyBazarAdmin/AdminLogin.aspx">Bill Adjustment</a></li>
+                                    <li><a href="contact">Contact Us</a></li>
+                                    <li><a href="order-history">Order View</a></li>
+                                    <li><a href="feedback">Feedback</a></li>
+                                    <li><a href="faq">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Quick Shop</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="catagory?N=Grocery">Grocery</a></li>
+                                    <li><a href="catagory?N=Personal Care">Personal Care</a></li>
+                                    <li><a href="catagory?N=Beverages">Beverages</a></li>
+                                    <li><a href="catagory?N=Branded Food">Branded Food</a></li>
+                                    <li><a href="catagory?N=Household">Household</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Policies</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="term-and-condition">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="return-refund">Refund Policy</a></li>
+                                    <li><a href="sitemap">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="single-widget">
+                                <h2>Know Us</h2>
+                               <%-- <ul class="nav nav-pills nav-stacked">--%>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="about">About Us</a></li>
+                                    <li><a href="contact">Contact Us</a></li>
+                                    <li><a href="#">info@btbasket.com</a></li>
+                                    <li><a href="user-review">User Review</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <div class="single-widget">
+                               <%-- <h2>Social Media</h2>--%>
+                                <div class="social-icons">
+                                    <ul class="footer-social pull-left">
+                                        <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br />
+                
+            </div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row float-lt">
+                    <p style="color:white;font-size:small;">Copyright © 2018 BTsoftnet Services. All rights reserved.</p>
+                </div>
+</div>
+        </div>
+</div>
+
+</form>
+</div>
+</body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.scrollUp.min.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>--%>
+<script type="text/javascript">
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            $('.header-middlemaster,.header-bottom').addClass("stickymaster");
+            $('.header-bottom').addClass("sticky1");
+        }
+        else {
+            $('.header-middlemaster,.header-bottom').removeClass("stickymaster");
+            $('.header-bottom').removeClass("sticky1");
+        }
+    });
+    </script>
+<script type="text/javascript">
+    document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility = "hidden";
+        } else if (state == 'complete') {
+            setTimeout(function () {
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility = "hidden";
+                document.getElementById('contents').style.visibility = "visible";
+            }, 1000);
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on('click', '.signup-tab', function (e) {
+            e.preventDefault();
+            $('#signup-taba').tab('show');
+        });
+
+        $(document).on('click', '.signin-tab', function (e) {
+            e.preventDefault();
+            $('#signin-taba').tab('show');
+        });
+
+        $(document).on('click', '.forgetpass-tab', function (e) {
+            e.preventDefault();
+            $('#forgetpass-taba').tab('show');
+        });
+    });
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $('.dropdown-menu', this).stop().fadeIn("fast");
+            },
+            function () {
+                $('.dropdown-menu', this).stop().fadeOut("fast");
+            });
+    });
+    </script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        if (sessionStorage.getItem('#myModal') !== 'true') {
+
+            $("#myModal").modal('show');
+
+            sessionStorage.getItem('#myModal', 'true');
+        }
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myCarousel').carousel({
+            interval:1700
+        });
+
+        var clickEvent = false;
+        $('#myCarousel').on('click', '.nav a', function () {
+            clickEvent = true;
+            $('.nav li').removeClass('active');
+            $(this).parent().addClass('active');
+        }).on('slid.bs.carousel', function (e) {
+            if (!clickEvent) {
+                var count = $('.nav').children().length - 1;
+                var current = $('.nav li.active');
+                current.removeClass('active').next().addClass('active');
+                var id = parseInt(current.data('slide-to'));
+                if (count == id) {
+                    $('.nav li').first().addClass('active');
+                }
+            }
+            clickEvent = false;
+        });
+    });
+</script>
+<script type="text/javascript">
+    function checkOffset() {
+        var a = $(document).scrollTop() + window.innerHeight;
+        var b = $('#footer').offset().top;
+        if (a < b) {
+            $('.brands-name').css('bottom', '10px');
+        } else {
+            $('.brands-name').css('bottom', (10 + (a - b)) + 'px');
+        }
+    }
+    $(document).ready(checkOffset);
+    $(document).scroll(checkOffset);
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#demo1').skdslider({ 'delay': 5000, 'animationSpeed': 2000, 'showNextPrev': true, 'showPlayButton': true, 'autoSlide': true, 'animationType': 'fading' });
+
+        jQuery('#responsive').change(function () {
+            $('#responsive_wrapper').width(jQuery(this).val());
+        });
+
+    });
+</script>
+
+<%--<script type="text/javascript">
+$(window).load(function() {
+    $(".loaderdiv").fadeOut("4000");
+});
+</script>	--%>
+<a href="https://seal.beyondsecurity.com/vulnerability-scanner-verification/btbasket.com"><img src="https://seal.beyondsecurity.com/verification-images/btbasket.com/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
+</html>
